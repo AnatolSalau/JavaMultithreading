@@ -22,7 +22,7 @@ import java.util.concurrent.Semaphore;
 @Slf4j
 public class Port {
 
-      private final int SHIPS = 10;
+      private final int SHIPS = 2;
       private final int FREE_PLACES = 5;
       private final int DOCKERS = 3;
 
@@ -36,10 +36,15 @@ public class Port {
 
             @Override
             public void run() {
-                  log.info("Docker thread {}", Thread.currentThread());
-                  startWork(free_places);
+                  log.info("Docker team number : {} start work", Thread.currentThread().getName());
+
+                  startWork(ships);
+
+                  log.info("Ships qty : {}", ships.availablePermits());
                   toWait(5000);
-                  finishWork(free_places);
+                  //finishWork(free_places);
+
+                  log.info("Docker team number : {} finish work", Thread.currentThread().getName());
 
             }
 
@@ -65,13 +70,10 @@ public class Port {
       }
 
       private void start() {
-            int teamDockersNumber = 1;
-            while (areUnloadedShips) {
+            new Thread(new Docker(),  "" + 1).start();
+            new Thread(new Docker(),  "" + 2).start();
+            new Thread(new Docker(),  "" + 3).start();
 
-                  new Thread(new Docker(), "" + teamDockersNumber).start();
-
-                  teamDockersNumber++;
-            }
       }
 
       public static void main(String[] args) {
