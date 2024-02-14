@@ -22,8 +22,8 @@ import java.util.concurrent.Semaphore;
 @Slf4j
 public class Port {
 
-      private final int SHIPS = 2;
-      private final int FREE_PLACES = 5;
+      private final int SHIPS = 10;
+      private final int FREE_PLACES = 2;
       private final int DOCKERS = 3;
 
       private final Semaphore ships = new Semaphore(SHIPS);
@@ -36,16 +36,39 @@ public class Port {
 
             @Override
             public void run() {
-                  log.info("Docker team number : {} start work", Thread.currentThread().getName());
+                  log.info("Docker team number : {} start work day", Thread.currentThread().getName());
+                  while (ships.availablePermits() > 0) {
 
-                  startWork(ships);
+                        if (free_places.availablePermits() > 0) {
+                              int shipNumber = ships.availablePermits();
+                              log.info("Docker team number : {} start unloads ship number : {}", Thread.currentThread().getName(), shipNumber);
+                              startWork(ships);
+                              startWork(free_places);
 
-                  log.info("Ships qty : {}", ships.availablePermits());
-                  toWait(5000);
-                  //finishWork(free_places);
+                              toWait(5000);
 
-                  log.info("Docker team number : {} finish work", Thread.currentThread().getName());
+                              log.info("Docker finish unloads ship number : {},", shipNumber);
+                              finishWork(free_places);
+                        } else {
 
+                              log.error("Docker team number : {} wait when place will be free  ", Thread.currentThread().getName());
+
+                              startWork(free_places);
+
+                              log.error("Docker team number : {} finish wait  ", Thread.currentThread().getName());
+
+                              int shipNumber = ships.availablePermits();
+                              log.info("Docker team number : {} start unloads ship number : {}", Thread.currentThread().getName(), shipNumber);
+                              startWork(ships);
+                              toWait(5000);
+
+                              log.info("Docker finish unloads ship number : {},", shipNumber);
+                              finishWork(free_places);
+                        }
+                  }
+
+                  log.info("Docker team number : {} finish work day because of there aren't ships", Thread.currentThread().getName());
+                  log.info("Ships left in port : {}", ships.availablePermits());
             }
 
             private void startWork(Semaphore semaphore) {
@@ -54,6 +77,7 @@ public class Port {
                   } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                   }
+
             }
 
             private void finishWork(Semaphore semaphore) {
@@ -69,15 +93,22 @@ public class Port {
             }
       }
 
-      private void start() {
-            new Thread(new Docker(),  "" + 1).start();
-            new Thread(new Docker(),  "" + 2).start();
-            new Thread(new Docker(),  "" + 3).start();
+      private void startApp() {
+            //run dockers
+            for (int i = 1; i <= DOCKERS; i++) {
+                  new Thread(new Docker(), String.valueOf(i)).start();
+                  try {
+                        Thread.sleep(1000);
+                  } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                  }
+            }
+
 
       }
 
       public static void main(String[] args) {
             Port port = new Port();
-            port.start();
+            port.startApp();
       }
 }
