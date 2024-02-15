@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.concurrent.*;
 
 @Slf4j
-public class Sample {
+public class SampleFuture {
       private static final int POOL_SIZE = 3;
       public static void main(String[] args) {
            log.info("Main start work");
