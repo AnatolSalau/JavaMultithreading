@@ -1,0 +1,59 @@
+Широта и долгота 53.9006° N, 27.5590° E
+
+OpenWeather
+    salovanatoly5@mail.ru
+
+    https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key}
+
+    https://openweathermap.org/forecast5
+
+    Request
+    https://api.openweathermap.org/data/2.5/weather?lat=53.90&lon=27.55&appid=252c0950663084f347d9b3f79b8f25ba
+
+    Response
+    {
+        "coord": {
+            "lon": 27.55,
+            "lat": 53.9
+        },
+        "weather": [
+            {
+                "id": 804,
+                "main": "Clouds",
+                "description": "overcast clouds",
+                "icon": "04d"
+            }
+        ],
+        "base": "stations",
+        "main": {
+            "temp": 276.03,
+            "feels_like": 272.01,
+            "temp_min": 276.03,
+            "temp_max": 276.03,
+            "pressure": 1018,
+            "humidity": 97,
+            "sea_level": 1018,
+            "grnd_level": 992
+        },
+        "visibility": 10000,
+        "wind": {
+            "speed": 4.67,
+            "deg": 235,
+            "gust": 10.25
+        },
+        "clouds": {
+            "all": 100
+        },
+        "dt": 1708180482,
+        "sys": {
+            "type": 1,
+            "id": 8939,
+            "country": "BY",
+            "sunrise": 1708147620,
+            "sunset": 1708183259
+        },
+        "timezone": 10800,
+        "id": 625143,
+        "name": "Minsk City",
+        "cod": 200
+    }

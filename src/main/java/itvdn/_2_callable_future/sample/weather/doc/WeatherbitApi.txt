@@ -1,0 +1,545 @@
+Широта и долгота 53.9006° N, 27.5590° E
+
+https://www.weatherbit.io/account/dashboard
+
+e1c7e6088ca549458378472403c3a03b
+
+Request
+    https://api.weatherbit.io/v2.0/current?lat=53.9006&lon=27.5590&key=e1c7e6088ca549458378472403c3a03b&include=minutely
+
+Response
+    {
+        "count": 1,
+        "data": [
+            {
+                "app_temp": 0.3,
+                "aqi": 33,
+                "city_name": "Minsk",
+                "clouds": 92,
+                "country_code": "BY",
+                "datetime": "2024-02-17:15",
+                "dewpt": 2.4,
+                "dhi": 20.71,
+                "dni": 141.09,
+                "elev_angle": 2.17,
+                "ghi": 17.14,
+                "gust": 5.14,
+                "h_angle": 90,
+                "lat": 53.9006,
+                "lon": 27.559,
+                "ob_time": "2024-02-17 15:10",
+                "pod": "n",
+                "precip": 0,
+                "pres": 992,
+                "rh": 97,
+                "slp": 1018.5,
+                "snow": 0,
+                "solar_rad": 5.5,
+                "sources": [
+                    "analysis",
+                    "radar",
+                    "satellite"
+                ],
+                "state_code": "04",
+                "station": "UMMS",
+                "sunrise": "05:22",
+                "sunset": "15:20",
+                "temp": 2.9,
+                "timezone": "Europe/Minsk",
+                "ts": 1708182628,
+                "uv": 0.45679754,
+                "vis": 16,
+                "weather": {
+                    "icon": "r01n",
+                    "description": "Light rain",
+                    "code": 500
+                },
+                "wind_cdir": "SW",
+                "wind_cdir_full": "southwest",
+                "wind_dir": 216,
+                "wind_spd": 2.57
+            }
+        ],
+        "minutely": [
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.2,
+                "ts": 1708183560,
+                "timestamp_utc": "2024-02-17T15:26:00",
+                "timestamp_local": "2024-02-17T18:26:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.2,
+                "ts": 1708183620,
+                "timestamp_utc": "2024-02-17T15:27:00",
+                "timestamp_local": "2024-02-17T18:27:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.2,
+                "ts": 1708183680,
+                "timestamp_utc": "2024-02-17T15:28:00",
+                "timestamp_local": "2024-02-17T18:28:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.2,
+                "ts": 1708183740,
+                "timestamp_utc": "2024-02-17T15:29:00",
+                "timestamp_local": "2024-02-17T18:29:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.2,
+                "ts": 1708183800,
+                "timestamp_utc": "2024-02-17T15:30:00",
+                "timestamp_local": "2024-02-17T18:30:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708183860,
+                "timestamp_utc": "2024-02-17T15:31:00",
+                "timestamp_local": "2024-02-17T18:31:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708183920,
+                "timestamp_utc": "2024-02-17T15:32:00",
+                "timestamp_local": "2024-02-17T18:32:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708183980,
+                "timestamp_utc": "2024-02-17T15:33:00",
+                "timestamp_local": "2024-02-17T18:33:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184040,
+                "timestamp_utc": "2024-02-17T15:34:00",
+                "timestamp_local": "2024-02-17T18:34:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184100,
+                "timestamp_utc": "2024-02-17T15:35:00",
+                "timestamp_local": "2024-02-17T18:35:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184160,
+                "timestamp_utc": "2024-02-17T15:36:00",
+                "timestamp_local": "2024-02-17T18:36:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184220,
+                "timestamp_utc": "2024-02-17T15:37:00",
+                "timestamp_local": "2024-02-17T18:37:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184280,
+                "timestamp_utc": "2024-02-17T15:38:00",
+                "timestamp_local": "2024-02-17T18:38:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184340,
+                "timestamp_utc": "2024-02-17T15:39:00",
+                "timestamp_local": "2024-02-17T18:39:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184400,
+                "timestamp_utc": "2024-02-17T15:40:00",
+                "timestamp_local": "2024-02-17T18:40:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184460,
+                "timestamp_utc": "2024-02-17T15:41:00",
+                "timestamp_local": "2024-02-17T18:41:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184520,
+                "timestamp_utc": "2024-02-17T15:42:00",
+                "timestamp_local": "2024-02-17T18:42:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184580,
+                "timestamp_utc": "2024-02-17T15:43:00",
+                "timestamp_local": "2024-02-17T18:43:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184640,
+                "timestamp_utc": "2024-02-17T15:44:00",
+                "timestamp_local": "2024-02-17T18:44:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184700,
+                "timestamp_utc": "2024-02-17T15:45:00",
+                "timestamp_local": "2024-02-17T18:45:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184760,
+                "timestamp_utc": "2024-02-17T15:46:00",
+                "timestamp_local": "2024-02-17T18:46:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184820,
+                "timestamp_utc": "2024-02-17T15:47:00",
+                "timestamp_local": "2024-02-17T18:47:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184880,
+                "timestamp_utc": "2024-02-17T15:48:00",
+                "timestamp_local": "2024-02-17T18:48:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708184940,
+                "timestamp_utc": "2024-02-17T15:49:00",
+                "timestamp_local": "2024-02-17T18:49:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185000,
+                "timestamp_utc": "2024-02-17T15:50:00",
+                "timestamp_local": "2024-02-17T18:50:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185060,
+                "timestamp_utc": "2024-02-17T15:51:00",
+                "timestamp_local": "2024-02-17T18:51:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185120,
+                "timestamp_utc": "2024-02-17T15:52:00",
+                "timestamp_local": "2024-02-17T18:52:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185180,
+                "timestamp_utc": "2024-02-17T15:53:00",
+                "timestamp_local": "2024-02-17T18:53:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185240,
+                "timestamp_utc": "2024-02-17T15:54:00",
+                "timestamp_local": "2024-02-17T18:54:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185300,
+                "timestamp_utc": "2024-02-17T15:55:00",
+                "timestamp_local": "2024-02-17T18:55:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185360,
+                "timestamp_utc": "2024-02-17T15:56:00",
+                "timestamp_local": "2024-02-17T18:56:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185420,
+                "timestamp_utc": "2024-02-17T15:57:00",
+                "timestamp_local": "2024-02-17T18:57:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185480,
+                "timestamp_utc": "2024-02-17T15:58:00",
+                "timestamp_local": "2024-02-17T18:58:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185540,
+                "timestamp_utc": "2024-02-17T15:59:00",
+                "timestamp_local": "2024-02-17T18:59:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185600,
+                "timestamp_utc": "2024-02-17T16:00:00",
+                "timestamp_local": "2024-02-17T19:00:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185660,
+                "timestamp_utc": "2024-02-17T16:01:00",
+                "timestamp_local": "2024-02-17T19:01:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185720,
+                "timestamp_utc": "2024-02-17T16:02:00",
+                "timestamp_local": "2024-02-17T19:02:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185780,
+                "timestamp_utc": "2024-02-17T16:03:00",
+                "timestamp_local": "2024-02-17T19:03:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185840,
+                "timestamp_utc": "2024-02-17T16:04:00",
+                "timestamp_local": "2024-02-17T19:04:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185900,
+                "timestamp_utc": "2024-02-17T16:05:00",
+                "timestamp_local": "2024-02-17T19:05:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708185960,
+                "timestamp_utc": "2024-02-17T16:06:00",
+                "timestamp_local": "2024-02-17T19:06:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186020,
+                "timestamp_utc": "2024-02-17T16:07:00",
+                "timestamp_local": "2024-02-17T19:07:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186080,
+                "timestamp_utc": "2024-02-17T16:08:00",
+                "timestamp_local": "2024-02-17T19:08:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186140,
+                "timestamp_utc": "2024-02-17T16:09:00",
+                "timestamp_local": "2024-02-17T19:09:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186200,
+                "timestamp_utc": "2024-02-17T16:10:00",
+                "timestamp_local": "2024-02-17T19:10:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186260,
+                "timestamp_utc": "2024-02-17T16:11:00",
+                "timestamp_local": "2024-02-17T19:11:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186320,
+                "timestamp_utc": "2024-02-17T16:12:00",
+                "timestamp_local": "2024-02-17T19:12:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186380,
+                "timestamp_utc": "2024-02-17T16:13:00",
+                "timestamp_local": "2024-02-17T19:13:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186440,
+                "timestamp_utc": "2024-02-17T16:14:00",
+                "timestamp_local": "2024-02-17T19:14:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186500,
+                "timestamp_utc": "2024-02-17T16:15:00",
+                "timestamp_local": "2024-02-17T19:15:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186560,
+                "timestamp_utc": "2024-02-17T16:16:00",
+                "timestamp_local": "2024-02-17T19:16:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186620,
+                "timestamp_utc": "2024-02-17T16:17:00",
+                "timestamp_local": "2024-02-17T19:17:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186680,
+                "timestamp_utc": "2024-02-17T16:18:00",
+                "timestamp_local": "2024-02-17T19:18:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186740,
+                "timestamp_utc": "2024-02-17T16:19:00",
+                "timestamp_local": "2024-02-17T19:19:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186800,
+                "timestamp_utc": "2024-02-17T16:20:00",
+                "timestamp_local": "2024-02-17T19:20:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186860,
+                "timestamp_utc": "2024-02-17T16:21:00",
+                "timestamp_local": "2024-02-17T19:21:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186920,
+                "timestamp_utc": "2024-02-17T16:22:00",
+                "timestamp_local": "2024-02-17T19:22:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708186980,
+                "timestamp_utc": "2024-02-17T16:23:00",
+                "timestamp_local": "2024-02-17T19:23:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708187040,
+                "timestamp_utc": "2024-02-17T16:24:00",
+                "timestamp_local": "2024-02-17T19:24:00"
+            },
+            {
+                "precip": 0,
+                "snow": 0,
+                "temp": 2.3,
+                "ts": 1708187100,
+                "timestamp_utc": "2024-02-17T16:25:00",
+                "timestamp_local": "2024-02-17T19:25:00"
+            }
+        ]
+    }
