@@ -1,8 +1,8 @@
-package itvdn._3_executor_service_fork_join;
+package itvdn._3_executor_service_fork_join.custom_thread_pool;
 
 public class Main {
       public static void main(String[] args) {
-            ThreadPool threadPool = new ThreadPool(3,10);
+            ThreadPool threadPool = new ThreadPool(4,10);
 
             for (int i = 0; i < 10; i++) {
                   int taskNumber = i;

@@ -1,4 +1,4 @@
-package itvdn._3_executor_service_fork_join;
+package itvdn._3_executor_service_fork_join.custom_thread_pool;
 
 import java.util.concurrent.BlockingQueue;
 
@@ -7,7 +7,7 @@ import java.util.concurrent.BlockingQueue;
  */
 public class RunnablesPool implements Runnable {
       private Thread thread = null;
-      private BlockingQueue<Runnable> blockingQueue;
+      private final BlockingQueue<Runnable> blockingQueue;
 
       private boolean isStopped = false;
 
