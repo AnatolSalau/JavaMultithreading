@@ -16,7 +16,6 @@ public class ExecutorServiceExample {
       }
 
       private static void testFixedThreadPoolExecutor() throws InterruptedException {
-            AtomicLong countThreads = new AtomicLong();
             AtomicLong countTasks = new AtomicLong();
             ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
             long start = System.currentTimeMillis();
@@ -76,7 +75,7 @@ public class ExecutorServiceExample {
                         };
                         List<Long> fibonacciList = findFibonacci.apply(100l);
                         countTasks.getAndIncrement();
-                        //System.out.println(Thread.currentThread().getName() + ", task :" + taskNumber + ", " + countTasks);
+                        System.out.println(Thread.currentThread().getName() + ", task :" + taskNumber + ", " + countTasks);
                   });
             }
             while (countTasks.getPlain() < 1_000_000) {
