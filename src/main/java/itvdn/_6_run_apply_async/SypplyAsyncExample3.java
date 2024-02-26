@@ -28,8 +28,14 @@ public class SypplyAsyncExample3 {
                         });
 
                         System.out.println("1 - print min and max values");
-                        System.out.println("1 - print sum all values");
-                        System.out.println("1 - print min and max values");
+                        System.out.println("2 - print sum all values");
+                        System.out.println("3 - print average value");
+                        System.out.println("Make a choice");
+                        int choice = scanner.nextInt();
+
+                        if (!getIntegerListFromFile.isDone()) {
+                              System.out.println();
+                        }
 
                   }
             }

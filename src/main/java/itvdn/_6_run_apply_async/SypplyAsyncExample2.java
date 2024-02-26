@@ -29,7 +29,5 @@ public class SypplyAsyncExample2 {
                   getIntegerListFromFile.thenAccept(System.out::println).join();
 
             }
-
-
       }
 }
