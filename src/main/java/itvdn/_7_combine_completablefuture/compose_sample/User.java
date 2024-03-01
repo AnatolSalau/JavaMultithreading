@@ -1,4 +1,4 @@
-package itvdn._7_combine_completablefuture.combine;
+package itvdn._7_combine_completablefuture.compose_sample;
 
 import java.util.Date;
 import java.util.Random;
@@ -15,5 +15,15 @@ public class User {
             countOfOrders = random.nextInt(50);
             sumOfOrders = random.nextDouble() * random.nextInt(1000);
             referralFriends = random.nextInt(30);
+      }
+
+      @Override
+      public String toString() {
+            return "User{" +
+                  "registrationDate=" + registrationDate +
+                  ", countOfOrders=" + countOfOrders +
+                  ", sumOfOrders=" + sumOfOrders +
+                  ", referralFriends=" + referralFriends +
+                  '}';
       }
 }

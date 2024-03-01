@@ -1,4 +1,4 @@
-package itvdn._7_combine_completablefuture.combine;
+package itvdn._7_combine_completablefuture.compose_sample;
 
 import java.util.Date;
 
