@@ -1,9 +1,9 @@
-package itvdn._7_combine_completablefuture.compose_sample;
+package itvdn._7_combine_completablefuture.multiple_tasks_sample;
 
 import java.util.Date;
 import java.util.Random;
 
-class User {
+public class User {
       Date registrationDate;
       int countOfOrders;
       double sumOfOrders;

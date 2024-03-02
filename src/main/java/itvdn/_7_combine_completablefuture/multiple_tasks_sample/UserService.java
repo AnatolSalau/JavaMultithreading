@@ -1,8 +1,8 @@
-package itvdn._7_combine_completablefuture.compose_sample;
+package itvdn._7_combine_completablefuture.multiple_tasks_sample;
 
 import java.util.Date;
 
-class UserService {
+public class UserService {
       public static User getUserFromRemoteService() {
             return new User();
       }
