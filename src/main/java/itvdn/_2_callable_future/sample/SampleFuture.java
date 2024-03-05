@@ -11,8 +11,8 @@ public class SampleFuture {
       private static final int POOL_SIZE = 3;
       public static void main(String[] args) {
            log.info("Main start work");
-           try(ExecutorService executorService = Executors.newFixedThreadPool(POOL_SIZE)) {
-
+           try {
+                 ExecutorService executorService = Executors.newFixedThreadPool(POOL_SIZE);
                  Callable<String> callable = () -> {
                        log.info("{} start work", Thread.currentThread().getName());
                        toWait(1000);

@@ -11,8 +11,8 @@ public class SampleFutureIsDone {
       private static final int POOL_SIZE = 1;
       public static void main(String[] args) {
            log.info("Main start work");
-           try(ExecutorService executorService = Executors.newFixedThreadPool(POOL_SIZE)) {
 
+                 ExecutorService executorService = Executors.newFixedThreadPool(POOL_SIZE);
                  Callable<String> callable = () -> {
                        log.info("{} start work", Thread.currentThread().getName());
                        toWait(3000);
@@ -27,7 +27,7 @@ public class SampleFutureIsDone {
                        log.info("Waiting, Future is executing...");
                        toWait(500);
                  }
-           }
+
       }
 
 
