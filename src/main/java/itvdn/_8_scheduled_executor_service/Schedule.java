@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 
 
-public class TaskAfter5Sec {
+public class Schedule {
       public static void main(String[] args) {
             ScheduledExecutorService scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
 
