@@ -40,3 +40,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/_10_scather_gather_data_service/.gradle/
