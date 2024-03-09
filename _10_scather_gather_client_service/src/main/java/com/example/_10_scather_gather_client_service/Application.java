@@ -1,4 +1,4 @@
-package com.example._10_scather_gather_data_service;
+package com.example._10_scather_gather_client_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
