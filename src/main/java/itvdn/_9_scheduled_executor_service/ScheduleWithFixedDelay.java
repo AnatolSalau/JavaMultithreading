@@ -1,8 +1,7 @@
-package itvdn._8_scheduled_executor_service;
+package itvdn._9_scheduled_executor_service;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.concurrent.*;
 import java.util.Date;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -36,7 +35,7 @@ public class ScheduleWithFixedDelay {
                   }
             }, 0, 3, TimeUnit.SECONDS);
 
-            scheduledExecutorService.awaitTermination(1, TimeUnit.HOURS);
+            //scheduledExecutorService.awaitTermination(1l, TimeUnit.HOURS);
             scheduledExecutorService.shutdown();
       }
 }
